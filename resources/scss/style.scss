@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+@font-face
+{
+    font-family: "VL PGothic";
+    src: url('https://cdn.leafscape.be/VLGothic/VL-PGothic-Regular_web.woff2') format("woff2"),
+    local('VL PGothic');
+}
+
+$family-sans-serif: "VL PGothic", "Meiryo", sans-serif;
+$family-monospace: "VL Gothic", monospace;
+
+body > .navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#top-hero.hero {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-shadow: 0 0 15px black, 0 0 20px rgba(0,0,0,0.3);
+}
+#top-hero-caption {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+@import "../../node_modules/bulma/bulma";
